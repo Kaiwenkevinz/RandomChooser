@@ -50,7 +50,7 @@ class ThirdViewController: UIViewController, UITableViewDelegate, UITableViewDat
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
-        self.title = "Choices for You"
+        self.title = "Let's do this task"
     }
 
     override func didReceiveMemoryWarning() {
