@@ -1,19 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="49e-Tb-3d3">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <customFonts key="customFonts">
-        <array key="Helvetica.ttc">
-            <string>Helvetica</string>
-        </array>
-    </customFonts>
     <scenes>
         <!--First View Controller-->
         <scene sceneID="hNz-n2-bh7">
@@ -85,7 +79,7 @@
             </objects>
             <point key="canvasLocation" x="1548" y="-331"/>
         </scene>
-        <!--Second View Controller-->
+        <!--Picker-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
                 <viewController id="8rJ-Kc-sve" customClass="SecondViewController" customModule="TODO" customModuleProvider="target" sceneMemberID="viewController">
@@ -97,22 +91,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Let God Deside" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q0z-DO-JUE">
-                                <rect key="frame" x="82" y="124" width="210" height="33.5"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="what are you going to do?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBx-GV-V4E">
-                                <rect key="frame" x="61" y="188.5" width="253" height="24"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Random Picker" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GBx-GV-V4E">
+                                <rect key="frame" x="61" y="169.5" width="253" height="43"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="36"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dY6-AJ-vgr">
                                 <rect key="frame" x="112" y="267.5" width="151" height="46"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="28"/>
-                                <state key="normal" title="Click"/>
+                                <state key="normal" title="Start"/>
                                 <connections>
                                     <action selector="myButton:" destination="8rJ-Kc-sve" eventType="touchUpInside" id="rMu-cG-CYW"/>
                                 </connections>
@@ -120,21 +108,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstAttribute="trailingMargin" secondItem="q0z-DO-JUE" secondAttribute="trailing" constant="67" id="HGf-nB-Uwo"/>
-                            <constraint firstItem="GBx-GV-V4E" firstAttribute="top" secondItem="q0z-DO-JUE" secondAttribute="bottom" constant="31" id="Kde-MA-wYh"/>
                             <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="dY6-AJ-vgr" secondAttribute="bottom" constant="304.5" id="NTd-e1-gDt"/>
-                            <constraint firstItem="q0z-DO-JUE" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="66" id="PwU-nQ-PiD"/>
                             <constraint firstAttribute="trailingMargin" secondItem="dY6-AJ-vgr" secondAttribute="trailing" constant="96" id="S6d-2H-hqp"/>
                             <constraint firstAttribute="trailingMargin" secondItem="GBx-GV-V4E" secondAttribute="trailing" constant="45" id="Y2N-ho-7WP"/>
                             <constraint firstItem="GBx-GV-V4E" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="45" id="ZHr-u9-7ke"/>
                             <constraint firstItem="dY6-AJ-vgr" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="96" id="bGR-Rq-zHB"/>
-                            <constraint firstItem="q0z-DO-JUE" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="104" id="gei-2D-S9U"/>
                             <constraint firstItem="dY6-AJ-vgr" firstAttribute="top" secondItem="GBx-GV-V4E" secondAttribute="bottom" constant="55" id="kWK-40-da1"/>
                             <constraint firstItem="dY6-AJ-vgr" firstAttribute="top" secondItem="GBx-GV-V4E" secondAttribute="bottom" constant="55" id="pft-Dv-3kO"/>
-                            <constraint firstItem="GBx-GV-V4E" firstAttribute="top" secondItem="q0z-DO-JUE" secondAttribute="bottom" constant="31" id="z92-U5-gKY"/>
                         </constraints>
                     </view>
-                    <tabBarItem key="tabBarItem" systemItem="search" id="cPa-gy-q4n"/>
+                    <tabBarItem key="tabBarItem" title="Picker" image="icons8-lumpy-space-princess-50" id="cPa-gy-q4n">
+                        <offsetWrapper key="titlePositionAdjustment" horizontal="7" vertical="0.0"/>
+                    </tabBarItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,13 +193,14 @@
             </objects>
             <point key="canvasLocation" x="0.0" y="0.0"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--To-dos-->
         <scene sceneID="hP2-ZF-z7U">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="hl9-nR-fTE" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" selectedImage="/Users/KevinZ/Desktop/TODO/iconbeast lite 200 - png/clock-timer-7.png" systemItem="recents" id="acW-dT-cKf"/>
+                    <tabBarItem key="tabBarItem" title="To-dos" image="icons8-bulleted-list-50" selectedImage="icons8-bulleted-list-50" id="acW-dT-cKf"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="O4Y-64-GaY">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -229,13 +215,14 @@
             </objects>
             <point key="canvasLocation" x="748.79999999999995" y="-330.13493253373315"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Result-->
         <scene sceneID="NGj-a8-Eda">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="UrM-LA-g9d" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" systemItem="favorites" id="aAL-3d-29J"/>
+                    <tabBarItem key="tabBarItem" title="Result" image="icons8-leaderboard-50" id="aAL-3d-29J"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aRu-QX-nKz">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -249,6 +236,8 @@
         </scene>
     </scenes>
     <resources>
-        <image name="/Users/KevinZ/Desktop/TODO/iconbeast lite 200 - png/clock-timer-7.png" width="16" height="16"/>
+        <image name="icons8-bulleted-list-50" width="37.5" height="37.5"/>
+        <image name="icons8-leaderboard-50" width="37.5" height="37.5"/>
+        <image name="icons8-lumpy-space-princess-50" width="37.5" height="37.5"/>
     </resources>
 </document>
