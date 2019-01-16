@@ -28,8 +28,8 @@ class SecondViewController: UIViewController, UITextFieldDelegate {
         }
         else {
             
-            let alert_deciding = UIAlertController(title: nil, message: "Hold on, God is deciding ...", preferredStyle: .alert)
-            let alert_2 = UIAlertController(title: nil, message: "Let's do it", preferredStyle: .alert)
+            let alert_deciding = UIAlertController(title: nil, message: "3 2 1 ...", preferredStyle: .alert)
+            let alert_2 = UIAlertController(title: nil, message: "Done!", preferredStyle: .alert)
             
             
             // generate random number
